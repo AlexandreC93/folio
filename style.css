@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap");
+footer {
+  display: flex;
+  flex-flow: row;
+  background-color: lightgray;
+  padding: 3vw;
+}
+footer .btn-foot {
+  list-style: none;
+}
+
+header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(19, 18, 18, 0.781) 25%, rgba(28, 28, 28, 0.4)), url(img/flat-head.jpg) center center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+input#theme-input {
+  display: block;
+  position: absolute;
+  right: 2px;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+}
+#menuToggle_buttons span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menuToggle a {
+  font-family: "Source Code Pro", " sans serif";
+  text-decoration: none;
+  color: #df2323;
+  transition: color 0.3 ease;
+}
+#menuToggle a:hover {
+  color: #2041ad;
+}
+#menuToggle input {
+  display: block;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(8px, 1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(8px, 1px);
+}
+
+#menu {
+  position: absolute;
+  width: 230px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+.img-prop {
+  border-radius: 50%;
+  height: 20vh;
+  width: 30vw;
+}
+
+#projet-img {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#projet-img img {
+  border: solid 5px;
+}
+#projet-img .cuisine-img {
+  margin: 10px;
+  width: 55vw;
+  height: 25vh;
+}
+#projet-img .iphone-img {
+  width: 30vw;
+  height: 25vh;
+}
+#projet-img .lol-img {
+  height: 35vh;
+  width: 45vw;
+  margin: 10px;
+}
+#projet-img .space-img {
+  width: 40vw;
+  height: 35vh;
+  position: inherit;
+}
+
+#projet-img img:hover {
+  transition: 0.5s;
+  box-shadow: gray 10px 10px 10px;
+}
+
+#aprop {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.font {
+  font-family: "Source Code Pro", " sans serif";
+  text-align: center;
+}
+
+.title {
+  margin-top: 30vh;
+  font-family: "Source Code Pro", " sans serif";
+  color: white;
+  text-align: center;
+}
+
+#aprop p.deux {
+  border-bottom: solid 2px black;
+  padding-bottom: 20px;
+}
+
+span.barre {
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 33px;
+  margin: 1vh;
+  top: 12px;
+  background-color: white;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#projet button {
+  background-color: lightgray;
+  border: none;
+  margin: 5px;
+  z-index: 1;
+  width: 10vw;
+}
+#projet button:hover {
+  background-color: gray;
+}
+#projet input {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 10vw;
+  height: 7vh;
+}
+#projet input:checked ~ .cuisine-img {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

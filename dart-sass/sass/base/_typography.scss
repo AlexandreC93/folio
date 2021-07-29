@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
+
+
+.font{
+    font-family: $font;
+    text-align: center;
+}
+
+.title{
+    margin-top: 30vh;
+    font-family: $font;
+    color: white;
+    text-align: center;
+}
+
+#aprop{
+    p.deux{
+        border-bottom: solid 2px black;
+        padding-bottom: 20px;
+    }
+}
+
+

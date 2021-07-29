@@ -1,0 +1,44 @@
+span.barre{
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 33px;
+    margin: 1vh;
+    top: 12px;
+    background-color: white;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 3px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#projet{
+    button{
+        background-color: lightgray;
+        border: none;
+        margin: 5px;
+        z-index: 1;
+        width: 10vw;
+    }
+
+    button:hover{
+        background-color: gray;
+    }
+
+    input{
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 10vw;
+        height: 7vh;
+    }
+
+    input:checked ~ .cuisine-img{
+        display: none;
+        
+    }
+}

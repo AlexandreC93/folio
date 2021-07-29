@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    flex-flow: row ;
+    background-color: lightgray;
+    padding: 3vw;
+
+    .btn-foot{
+        list-style: none;
+    }
+}
+

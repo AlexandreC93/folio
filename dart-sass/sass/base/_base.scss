@@ -1,0 +1,55 @@
+.img-prop{
+    border-radius: 50%;
+    height: 20vh;
+    width: 30vw;
+    
+}
+
+#projet-img{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    img{
+        border: solid 5px;
+    }
+
+    .cuisine-img{
+        margin: 10px;
+        width: 55vw;
+        height: 25vh;
+    }
+
+    .iphone-img{
+        width: 30vw;
+        height: 25vh;
+    }
+
+    .lol-img{
+        height: 35vh;
+        width: 45vw;
+        margin: 10px;
+    }
+
+    .space-img{
+        width: 40vw;
+        height: 35vh;
+        position: inherit;
+    }
+}
+
+#projet-img{
+    img:hover{
+        transition: 0.5s;
+        box-shadow: gray 10px 10px 10px ;
+    }
+}
+
+
+
+#aprop{
+    display: flex;
+    flex-flow: column;
+    align-items:  center;
+
+}
