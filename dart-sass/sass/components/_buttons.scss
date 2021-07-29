@@ -37,8 +37,18 @@ span.barre{
         height: 7vh;
     }
 
-    input:checked ~ .cuisine-img{
+    .check{
         display: none;
-        
     }
+
+    
+}
+
+input#theme-input{
+    display: block;
+    position: absolute;
+    right: -1px;
+    z-index: 2;
+    opacity: 0;
+    width: 3vw;
 }

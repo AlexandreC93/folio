@@ -1,0 +1,54 @@
+
+#projet-img{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    img{
+        border: solid 3px lightgray
+    }
+
+    .cuisine-img{
+        margin: 10px;
+        width: 55vw;
+        height: 25vh;
+    }
+
+    .iphone-img{
+        width: 30vw;
+        height: 25vh;
+    }
+
+    .lol-img{
+        height: 35vh;
+        width: 45vw;
+        margin: 10px;
+    }
+
+    .space-img{
+        width: 40vw;
+        height: 35vh;
+        position: inherit;
+    }
+}
+
+
+.img-none{
+    display:none;
+    transition: 0.5s;
+  }
+
+.img-boot{
+    display: auto;
+    }
+    
+.img-css{
+       display: auto; 
+    }
+
+.img-prop{
+    border-radius: 50%;
+ height: 20vh;
+width: 30vw;
+        
+ }

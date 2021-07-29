@@ -17,12 +17,6 @@ header {
   padding: 0;
 }
 
-input#theme-input {
-  display: block;
-  position: absolute;
-  right: 2px;
-}
-
 #menuToggle {
   display: block;
   position: relative;
@@ -95,38 +89,13 @@ input#theme-input {
   transform: none;
 }
 
-.img-prop {
-  border-radius: 50%;
-  height: 20vh;
-  width: 30vw;
+#aprop {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 10vh;
 }
-
-#projet-img {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-#projet-img img {
-  border: solid 5px;
-}
-#projet-img .cuisine-img {
-  margin: 10px;
-  width: 55vw;
-  height: 25vh;
-}
-#projet-img .iphone-img {
-  width: 30vw;
-  height: 25vh;
-}
-#projet-img .lol-img {
-  height: 35vh;
-  width: 45vw;
-  margin: 10px;
-}
-#projet-img .space-img {
-  width: 40vw;
-  height: 35vh;
-  position: inherit;
+#aprop input:checked ~ body {
+  background-color: #000;
 }
 
 #projet-img img:hover {
@@ -138,6 +107,13 @@ input#theme-input {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+.fas {
+  position: relative;
+  right: -330px;
+  z-index: 1;
+  height: 5vh;
 }
 
 body {
@@ -159,7 +135,8 @@ body {
 
 #aprop p.deux {
   border-bottom: solid 2px black;
-  padding-bottom: 20px;
+  padding-bottom: 200px;
+  margin-top: 100px;
 }
 
 span.barre {
@@ -195,8 +172,64 @@ span.barre {
   width: 10vw;
   height: 7vh;
 }
-#projet input:checked ~ .cuisine-img {
+#projet .check {
   display: none;
+}
+
+input#theme-input {
+  display: block;
+  position: absolute;
+  right: -1px;
+  z-index: 2;
+  opacity: 0;
+  width: 3vw;
+}
+
+#projet-img {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#projet-img img {
+  border: solid 3px lightgray;
+}
+#projet-img .cuisine-img {
+  margin: 10px;
+  width: 55vw;
+  height: 25vh;
+}
+#projet-img .iphone-img {
+  width: 30vw;
+  height: 25vh;
+}
+#projet-img .lol-img {
+  height: 35vh;
+  width: 45vw;
+  margin: 10px;
+}
+#projet-img .space-img {
+  width: 40vw;
+  height: 35vh;
+  position: inherit;
+}
+
+.img-none {
+  display: none;
+  transition: 0.5s;
+}
+
+.img-boot {
+  display: auto;
+}
+
+.img-css {
+  display: auto;
+}
+
+.img-prop {
+  border-radius: 50%;
+  height: 20vh;
+  width: 30vw;
 }
 
 /*# sourceMappingURL=style.css.map */
